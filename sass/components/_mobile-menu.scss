@@ -23,14 +23,14 @@
 
 
 
-.hr {
-    border: 0;
-    margin: 0 10px;
-    margin-top: 2px;
-    border-left: 1px solid rgba(33, 33, 33, 0.2);
-    height: 20px;
-    float: left;
-}
+// .hr {
+//     border: 0;
+//     margin: 0 10px;
+//     margin-top: 2px;
+//     border-left: 1px solid rgba(33, 33, 33, 0.2);
+//     height: 20px;
+//     float: left;
+// }
 
 
 
@@ -60,7 +60,6 @@
 
 
 
-
 .burger-navigation__link {
     @include font(40px, 500, 47px);
     text-decoration: none;
@@ -68,14 +67,9 @@
     color: var(--first-text-color);
     transition: color var(--duration-cubic);
 
-    &:hover,
-    &:focus {
-        color: var(--link-hover-focus-color)
-    }
 
 
 }    
-
 
 
 
@@ -87,16 +81,15 @@
 
 .burger-contact__link {
     @include font(34px, 500, 40px);
-    color: var(--second-text-color);
+    color: var(--first-btn-hover);
     text-decoration: none;
     letter-spacing: 0.02em;
     transition: color var(--duration-cubic);
    
 
 
-    &:hover, 
-    &:focus {
-        color: var(--first-btn-hover);
+     @media screen and (max-width:412px) {
+        font-size: 23px;
     }
 
 }
@@ -104,6 +97,7 @@
 .phone {
     @include font(24px, 500, 28px);
     letter-spacing: 00.02em;
+    color:rgba(117, 117, 117, 1);
 }
 
 
@@ -113,22 +107,66 @@
     color: var(--second-text-color);
     text-decoration: none;
     transition: color var(--duration-cubic);
-
-    &:hover,
-    &:focus {
-        color: var(--link-hover-focus-color)
-    }
+    color: var(--first-btn-hover);
 
 }
 
 
+// .role {
+//     @media screen and (max-width:358px) {
+//         display: none;
 
+//     }
+// }
+
+
+
+
+.burger-soc-ites {
+    margin-right: 12px;
+
+
+    &:not(:last-child) {
+    border: 0;
+    padding-right: 12px;
+    margin-top: 2px;
+    border-right: 1.5px solid rgba(33, 33, 33, 0.2);
+    height: 20px;
+    float: left;
+    }
+    
+    @media screen and (max-width:358px) {
+    margin-bottom: 10px;
+    }
+    
+
+    @media screen and (max-width:499px) {
+        margin-bottom: 12px;
+    }
+
+
+}
+
+
+.burger-soc-link-margin {
+    margin-top:15px;
+}  
+
+
+
+@media screen and (max-width:358px) {
+    .burger-soc-link-margin {
+        margin-top: 15px;
+    }
+}
 
 
 .burger-soc-list { 
     display: flex;
     flex-wrap: wrap;
+    align-items: baseline;
 }
+
 
 .burger-contact__item:not(:last-child),
 .burger-navigation__item:not(:last-child) {

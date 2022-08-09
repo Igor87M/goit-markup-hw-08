@@ -1,5 +1,5 @@
 .modal-form {
-    width: 370px;
+    max-width: 370px;
     margin: 40px auto 0;
 
 
@@ -145,7 +145,7 @@
     @include font(12px, 400, 14px);
     display: flex;
     align-items: center;
-    width: 375px;
+    max-width: 375px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
@@ -169,7 +169,6 @@
 .policy-link {
     @include font(12px, 400, 14px);
     color: rgba(33, 150, 243, 1);
-    margin-left: 6px;
 }
 
 
@@ -221,7 +220,7 @@
 .policy-link {
     color: rgba(33, 150, 243, 1);
     margin-bottom: 0;
-    margin-left: 6px;
+    margin-left: 2px;
     transition: color var(--duration-cubic);
 
     &:hover,

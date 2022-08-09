@@ -1,7 +1,12 @@
 .container.footer-container {
+    display: flex;
+    flex-direction: column;
+
+
     @media screen and (min-width:768px) {
         display: flex;
         flex-wrap: wrap;
+        flex-direction: row;
     }
 
     @media screen and (min-width:1200px)  {
@@ -16,11 +21,15 @@
 }
 
 .footer-wrapper {
-    width: 231px;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
     
+    @media screen and (min-width:768px) {
+        margin-left: 76px;
+    }
+
+
+
+
     @media screen and (min-width:1200px) {
         text-align: start;
         margin: 0 70px 0 0;
@@ -182,11 +191,14 @@
 
 
 .footer-soc-wrapper {
-    width: 207px;
-    margin-right: auto;
-    margin-left: auto;
     margin-bottom: 60px;
     text-align: center;
+
+    @media screen and (min-width:768px) {
+        margin-right: 68px;
+        margin-left: auto;
+    }
+
 
     @media screen and (min-width:1200px) {
         text-align: start;
