@@ -1,0 +1,29 @@
+.backdroop {
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+    opacity: 1;
+    transition: opacity var(--duration-cubic), visibility var(--duration-cubic);
+
+
+    padding: 93px 15px;
+
+
+
+
+
+    &.is-hidden {
+        opacity: 0;
+        pointer-events: none;
+        visibility: hidden;
+    }
+
+    &.is-hidden .modal {
+        transform: scale(0.7) translate(-70%, -70%);
+        opacity: 0.4;
+    }
+}

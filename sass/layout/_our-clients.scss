@@ -1,0 +1,59 @@
+.clients-title {
+    @include font(28px, 700, 32px);
+    text-align: center;
+    color: var(--first-text-color);
+    margin-bottom: 50px;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (min-width: 1200px) {
+        @include font(36px, null, 42px)
+    }
+
+
+}
+
+
+.clients-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.client-logo {
+    fill: var(--soc-link-color);
+}
+
+
+.client-link {
+    @extend %flex;
+    width: 210px;
+    height: 92px;
+    border: 1px solid var(--soc-link-color);
+    border-radius: 4px;
+    
+   
+
+    &:hover .client-logo,
+    &:focus .client-logo {
+        fill: var(--soc-link-hover-back);
+    }
+
+    &:hover,
+    &:focus {
+        border: 1px solid var(--soc-link-hover-back);
+    }
+
+
+    @media screen and(min-width:768px) {
+        width: 226px;
+    }
+
+
+    @media screen and(min-width:1200px) {
+        width: 170px;
+    }
+
+
+}

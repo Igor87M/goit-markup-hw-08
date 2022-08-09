@@ -1,0 +1,232 @@
+.modal-form {
+    width: 370px;
+    margin: 40px auto 0;
+
+
+    @media screen and (min-width:1200px) {
+        width: 448px;
+        margin: 40px auto 0;
+    }
+
+}
+
+
+.modal-form-title {
+    @include font(20px, 700, 30px);
+    text-align: center;
+    margin-bottom: 12px;
+
+
+    @media screen and (min-width:1200px) {
+    @include font(20px, 700, 23.44px);
+    text-align: center;
+    margin-bottom: 12px;
+    }
+
+}
+
+
+.modal-form-btn {
+    @include font(16px, 700, 30px);
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    min-width: 200px;
+    min-height: 50px;
+    padding: 10px 55px;
+    border: 0;
+    border-radius: 4px;
+    letter-spacing: 0.06em;
+    color: var(--white-color);
+    background-color: var(--soc-link-hover-back);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    transition: background-color var(--duration-cubic), box-shadow var(--duration-cubic);
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        background-color: rgba(24, 140, 232, 1);
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    }
+
+}
+
+
+.modal-form-field {
+    @include font(12px, 400, 14.06px);
+    display: block;
+    color: rgba(117, 117, 117, 1);
+    letter-spacing: 0.01em;
+}
+
+.modal-form-icon-wrap {
+    margin-bottom: 10px;
+    margin-top: 4px;
+}
+
+
+
+.form-input-textarea,
+.form-input {
+    display: block;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    background-color: var(--white-color);
+    transition: border-color var(--duration-cubic);
+}
+
+
+
+
+.form-input {
+    height: 40px;
+    padding-left: 41px;
+    
+
+    &:focus+.modal-form-icon {
+        fill: var(--link-hover-focus-color);
+    }
+
+    &:focus {
+        border-color: var(--soc-link-hover-back);
+        outline: none;
+    }
+
+}
+
+
+.texterea {
+    margin-bottom: 20px;
+}
+
+
+.form-input-textarea {
+    color: rgba(117, 117, 117, 0.5);
+    min-height: 120px;
+    resize: none;
+    padding: 12px 16px;
+    margin-top: 4px;
+
+    &::placeholder {
+        @include font(12px, 400, 14.06px);
+        color: rgba(117, 117, 117, 0.5);
+        letter-spacing: 0.01em;
+    }
+
+    &:focus {
+        border-color: var(--soc-link-hover-back);
+        outline: none;
+    }
+
+}
+
+
+.modal-form-icon-wrap {
+    position: relative;
+    display: block;
+
+}
+
+
+.modal-form-icon {
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+    transition: fill var(--duration-cubic);
+}
+
+
+.client-policy-text {
+    @include font(12px, 400, 14px);
+    display: flex;
+    align-items: center;
+    width: 375px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    color: rgba(117, 117, 117, 1);
+
+
+
+    @media screen and (min-width:1200px) {
+    display: flex;
+    align-items: center;
+    width: 428px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    line-height: 1.7;
+    color: rgba(117, 117, 117, 1);
+    }
+}
+
+
+.policy-link {
+    @include font(12px, 400, 14px);
+    color: rgba(33, 150, 243, 1);
+    margin-left: 6px;
+}
+
+
+
+.modal-checkbox-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    opacity: 0;
+    transition: opacity var(--duration-cubic);
+
+}
+
+
+.modal-form-check {
+    position: relative;
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    border: 2px solid black;
+    border-radius: 2px;
+    margin-right: 9px;
+    cursor: pointer;
+
+    .client-policy-check:checked+& {
+        border: none;
+    }
+
+}
+
+
+.client-policy-check {
+
+    &:checked+.modal-form-check>.modal-checkbox-icon {
+        opacity: 1;
+    }
+
+
+    &:focus+.modal-form-check {
+        outline: 1px solid rgba(33, 150, 243, 1);
+    }
+
+
+}
+
+
+.policy-link {
+    color: rgba(33, 150, 243, 1);
+    margin-bottom: 0;
+    margin-left: 6px;
+    transition: color var(--duration-cubic);
+
+    &:hover,
+    &:focus {
+        color: rgba(24, 140, 232, 1);
+    }
+
+}

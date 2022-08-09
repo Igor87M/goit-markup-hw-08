@@ -1,0 +1,144 @@
+.mobile-burger {
+    position: fixed;
+    padding: 48px 40px;
+    background-color: var(--white-color);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    z-index: 9999;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity var(--duration-cubic), visibility var(--duration-cubic);
+    overflow: auto;
+}
+
+
+
+.mobile-burger.is-open {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+}
+
+
+
+.hr {
+    border: 0;
+    margin: 0 10px;
+    margin-top: 2px;
+    border-left: 1px solid rgba(33, 33, 33, 0.2);
+    height: 20px;
+    float: left;
+}
+
+
+
+
+.mobile-burger__btn {
+    position: absolute;
+    top: 10px;
+    right:15px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    transition: fill var(--duration-cubic);
+    cursor: pointer;
+
+    &:hover .mobile-burger__icon,
+    &:focus .mobile-burger__icon {
+     fill:var(--link-hover-focus-color) 
+    }
+
+}
+
+
+.mobile-burger__icon {
+    transition: fill var(--duration-cubic);
+}
+
+
+
+
+
+.burger-navigation__link {
+    @include font(40px, 500, 47px);
+    text-decoration: none;
+    letter-spacing: 0.02em;
+    color: var(--first-text-color);
+    transition: color var(--duration-cubic);
+
+    &:hover,
+    &:focus {
+        color: var(--link-hover-focus-color)
+    }
+
+
+}    
+
+
+
+
+
+.burger-contact {
+    margin-bottom: 64px;
+}
+
+
+.burger-contact__link {
+    @include font(34px, 500, 40px);
+    color: var(--second-text-color);
+    text-decoration: none;
+    letter-spacing: 0.02em;
+    transition: color var(--duration-cubic);
+   
+
+
+    &:hover, 
+    &:focus {
+        color: var(--first-btn-hover);
+    }
+
+}
+
+.phone {
+    @include font(24px, 500, 28px);
+    letter-spacing: 00.02em;
+}
+
+
+.burger-soc-link {
+    @include font(18px, 500, 22px);
+    letter-spacing: 0.02em;
+    color: var(--second-text-color);
+    text-decoration: none;
+    transition: color var(--duration-cubic);
+
+    &:hover,
+    &:focus {
+        color: var(--link-hover-focus-color)
+    }
+
+}
+
+
+
+
+
+.burger-soc-list { 
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.burger-contact__item:not(:last-child),
+.burger-navigation__item:not(:last-child) {
+    margin-bottom: 32px;
+}
+
+.burger-navigation {
+    margin-bottom: 306px;
+}
+
+.burger__link_current {
+    color: var(--link-hover-focus-color);
+}

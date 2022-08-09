@@ -1,0 +1,97 @@
+
+.hero__wrap {
+    text-align: center;
+}
+
+
+.section.hero {
+    max-width: 480px;
+    padding-top: 118px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 118px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/bagraund-sm.jpg);
+    background-repeat: no-repeat;
+    background-color: var(--hero-back-color);
+    background-size: cover;
+
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/bagraund-sm@2x.jpg);
+        
+    }
+
+    
+    @media screen and (min-width:768px) {
+        min-width: 768px;
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/bagraund-md.jpg);
+
+
+        @media (min-device-pixel-ratio: 2),
+            (-webkit-min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/bagraund-md@2x.jpg);
+        }
+
+    }
+
+   
+    @media screen and (min-width:1200px) {
+        max-width: 1600px;
+        padding-top: 200px;
+        padding-bottom: 200px;
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/bagraund-lg.jpg);
+
+
+        @media (min-device-pixel-ratio: 2),
+            (-webkit-min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/bagraund-lg@2x.jpg);
+        }
+
+    }
+
+}
+
+
+
+
+.hero__title {
+    @include font(26px, 900, 42px);
+    text-transform: uppercase;
+    color: var(--white-color);
+    margin: 0 auto;
+    max-width: 360px;
+
+
+    @media screen and (min-width:1200px) {
+        @include font(44px, 900, 60px);
+    }
+    
+
+}
+
+.hero__btn {
+    @include font(16px, 700, 30px);
+    background-color: var(--link-hover-focus-color);
+    color: var(--white-color);
+    border: var(--decoration);
+    font-family: inherit;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+
+    margin-top: 30px;
+    padding: 10px 32px 10px 32px;
+    border-radius: 4px;
+
+
+    &:hover,
+    &:focus {
+        background-color: var(--first-btn-hover);
+    }
+}
+

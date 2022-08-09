@@ -1,0 +1,34 @@
+.logo {
+    @include font(24px, null, 28.18px);
+    color: var(--third-text-color);
+    font-family: "Raleway", sans-serif;
+    text-decoration: var(--decoration);
+
+
+    @media screen and (min-width:768px) {
+        @include font(24px, null, 28.18px);
+    }
+
+    @media screen and (min-width:1200px) {
+        @include font(26px, null, 30.52px);
+    }
+}
+
+.logo_blue {
+    color: var(--link-hover-focus-color);
+}
+
+
+.footer-logo {
+    @include font(24px, null, 28.18px);
+    color: var(--white-color);
+    font-family: "Raleway", sans-serif;
+    text-decoration: var(--decoration);
+
+
+    @media screen and (min-width:1200px) {
+        @include font(26px, null, 30.52px);
+    }
+
+
+}

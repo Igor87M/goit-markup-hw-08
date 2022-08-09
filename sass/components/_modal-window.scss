@@ -1,0 +1,72 @@
+.modal {
+    position: absolute;
+    max-width: 450px;
+    max-height: 609px;
+    width: 96%;
+    height: 96%;
+    top: 50%;
+    left: 50%;
+    border-radius: 4px;
+    opacity: 1;
+    transform: scale(1) translate(-50%, -50%);
+    transition: transform var(--duration-cubic),
+        opacity var(--duration-cubic);
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+        0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    background-color: var(--white-color);
+    background-color: #fff;
+    overflow: auto;
+
+
+
+
+    @media screen and (min-width:1200px) {
+        position: absolute;
+        max-width: 528px;
+        height: 581px;
+        top: 50%;
+        left: 50%;
+        border-radius: 4px;
+        opacity: 1;
+        transform: scale(1) translate(-50%, -50%);
+        transition: transform var(--duration-cubic),
+            opacity var(--duration-cubic);
+        box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+            0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+            0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+        background-color: var(--white-color);
+        background-color: #fff;
+        overflow: visible;
+      
+    }
+
+
+
+}
+
+
+.modal-button {
+    position: absolute;
+    @extend %flex;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: var(--white-color);
+    cursor: pointer;
+
+
+    &:hover .modal-icon,
+    &:focus .modal-icon {
+        fill: var(--soc-link-hover-back);
+    }
+}
+
+
+
+.modal-icon {
+    transition: fill var(--duration-cubic);
+}

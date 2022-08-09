@@ -1,0 +1,28 @@
+.animation-color {
+    transition: color var(--duration-cubic);
+}
+
+
+.animation-fill {
+    transition: fill var(--duration-cubic);
+}
+
+
+.animation-bgc {
+    transition: background-color var(--duration-cubic);
+}
+
+.animation-border {
+    transition: border var(--duration-cubic);
+}
+
+.animation-filter-btn {
+    transition: color var(--duration-cubic),
+    background-color var(--duration-cubic),
+    box-shadow var(--duration-cubic);
+}
+
+
+.animation-shadow-card {
+    transition: box-shadow var(--duration-cubic);
+}
