@@ -823,7 +823,7 @@ img {
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 118px;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(images/bagraund-sm.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../);
   background-repeat: no-repeat;
   background-color: var(--hero-back-color);
   background-size: cover;
@@ -1116,12 +1116,13 @@ img {
   }
 }
 
-.clients-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
+@media screen and (min-width: 479px) {
+  .clients-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
 }
-
 .client-logo {
   fill: var(--soc-link-color);
 }
@@ -1149,6 +1150,18 @@ img {
   }
 }
 
+@media screen and (max-width: 479px) {
+  .client-item {
+    width: 210px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+@media screen and (max-width: 479px) {
+  .client-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
 @media screen and (min-width: 768px) {
   .container.footer-container {
     display: flex;
@@ -1180,7 +1193,6 @@ img {
 }
 
 .footer-form-wrapper {
-  width: 450px;
   text-align: center;
 }
 @media screen and (min-width: 768px) {
@@ -1257,7 +1269,6 @@ img {
 }
 
 .footer-form {
-  width: 450px;
   text-align: center;
 }
 @media screen and (min-width: 1200px) {
@@ -1304,7 +1315,6 @@ img {
   font-size: 14px;
   font-weight: 700;
   line-height: 1.1428571429;
-  width: 358px;
   color: rgb(255, 255, 255);
   letter-spacing: 0.03em;
   text-transform: uppercase;
