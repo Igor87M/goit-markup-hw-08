@@ -70,6 +70,7 @@
 
     @media screen and (min-width:1200px) {
         @include font(44px, 900, 60px);
+        max-width: 696px;
     }
     
 
